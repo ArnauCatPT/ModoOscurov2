@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Polymarket Global Map</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <div class="panel" id="panel">
+    Loading...
+  </div>
+
+   <!-- Selector -->
+  <div class="filtro">
+    <label for="marketFilter">Filtrar mercado:</label>
+
+    <select id="marketFilter">
+      <option value="all">Todos</option>
+      <option value="bullish">Alcistas</option>
+      <option value="bearish">Bajistas</option>
+      <option value="neutral">Neutrales</option>
+    </select>
+  </div>
+
+  <div id="map"></div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <script src="./capitales.js"></script>
+
+  <script src="js/mapa3.js"></script>  
+</body>
+</html>

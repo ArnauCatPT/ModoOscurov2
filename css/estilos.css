@@ -1,0 +1,119 @@
+
+html, body{
+  margin:0;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  background:#05070b;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+#map{
+  width:100vw;
+  height:100vh;
+  background:#05070b;
+}
+
+/* PANEL */
+
+.panel{
+  position:absolute;
+  top:20px;
+  left:20px;
+  z-index:9999;
+
+  background:rgba(10,10,10,0.7);
+  border:1px solid rgba(255,180,0,0.2);
+
+  padding:14px 18px;
+  border-radius:14px;
+
+  color:#fff;
+
+  /* backdrop-filter:blur(10px); */
+
+  box-shadow:
+    0 0 20px rgba(255,180,0,0.15);
+}
+
+/* REMOVE LEAFLET BG */
+
+.leaflet-container{
+  background:#05070b;
+}
+
+/* HIDE ATTRIBUTION */
+
+.leaflet-control-attribution{
+  display:none;
+}
+
+
+/* POPUP */
+
+.leaflet-popup-content-wrapper{
+  background:#111;
+  color:#fff;
+  border-radius:12px;
+}
+
+.leaflet-popup-tip{
+  background:#111;
+}
+
+/* GLOW EFFECT */
+
+.glow-marker{
+  filter: drop-shadow(0 0 10px orange);
+}
+
+.country-label{
+  background:transparent;
+  border:none;
+}
+
+.label-text{
+  color:#cfcfcf;
+
+  font-size:14px;
+  font-weight:bold;
+
+  text-align:center;
+
+  text-shadow:
+    0 0 6px rgba(0,0,0,0.9);
+
+  letter-spacing:1px;
+}
+
+/* filtros */
+.filtro{
+  position:absolute;
+  top:20px;
+  right:20px;
+  z-index:9999;
+
+  background:#111;
+  padding:12px;
+  border-radius:12px;
+
+  border:1px solid #333;
+
+  font-family:Arial;
+}
+
+.filtro select{
+  margin-left:8px;
+  background:#000;
+  color:white;
+  border:1px solid #444;
+  padding:6px 10px;
+  border-radius:6px;
+}
+
+.country-label .label-text{
+  color:white;
+  font-size:11px;
+  font-weight:bold;
+  text-align:center;
+}
